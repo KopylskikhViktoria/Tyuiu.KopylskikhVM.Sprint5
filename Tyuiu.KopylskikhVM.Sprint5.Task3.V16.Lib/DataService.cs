@@ -6,7 +6,7 @@ namespace Tyuiu.KopylskikhVM.Sprint5.Task3.V16.Lib
 {
     public class DataService : ISprint5Task3V16
     {
-        public string SaveToFileTextData(double x)
+        public string SaveToFileTextData(int x)
         {
             string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask3.bin");
 

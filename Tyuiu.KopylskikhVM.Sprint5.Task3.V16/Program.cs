@@ -27,7 +27,7 @@ namespace Tyuiu.KopylskikhVM.Sprint5.Task3.V16
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double x = 3;
+            int x = 3;
 
             Console.WriteLine("x = " + x);
             Console.WriteLine();

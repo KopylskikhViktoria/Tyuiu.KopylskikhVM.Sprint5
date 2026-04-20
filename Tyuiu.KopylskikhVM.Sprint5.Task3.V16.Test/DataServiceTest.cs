@@ -12,7 +12,7 @@ namespace Tyuiu.KopylskikhVM.Sprint5.Task3.V16.Test
         {
             DataService ds = new DataService();
 
-            double x = 3;
+            int x = 3;
             string path = ds.SaveToFileTextData(x);
 
             FileInfo fileInfo = new FileInfo(path);
