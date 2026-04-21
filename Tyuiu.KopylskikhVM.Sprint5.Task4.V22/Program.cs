@@ -1,187 +1,114 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Linq;
 
 internal class Program
 {
     static void Main(string[] args)
     {
         // 1)
-        string text1 = "24, 2, 18, 4, -9, 4, 10, 18, 19, 16, 11, -3, -3, 15, 3, 18, -5, -4, 25, 19";
-        string[] strings1 = text1.Split(',');
-        List<string> oddNumbers1 = new List<string>();
-
-        foreach (string str in strings1)
+        string content1 = "3fja4lksdfj2lkjl3k6j9";
+        string newContent1 = "";
+        foreach (char c in content1)
         {
-            if (int.TryParse(str.Trim(), out int number) && number % 5 == 0)
+            if (char.IsDigit(c))
             {
-                oddNumbers1.Add(str.Trim());
+                newContent1 += c;
             }
         }
-
-        Console.WriteLine("1)");
-        Console.WriteLine(String.Join("\n", oddNumbers1));
-        Console.WriteLine();
-
+        Console.WriteLine("1) " + String.Join("\n", newContent1));
 
         // 2)
-        string text2 = "2, 18, 4, -9, 4, 10, 18, 19, 16";
-        string[] strings2 = text2.Split(',');
-        List<string> oddNumbers2 = new List<string>();
-
-        foreach (string str in strings2)
+        string content2 = "s3Ssads6asGa4dsa4hhgh2dfG";
+        string newContent2 = "";
+        foreach (char c in content2)
         {
-            if (int.TryParse(str.Trim(), out int number) && number % 2 != 0)
+            if (char.IsUpper(c))
             {
-                oddNumbers2.Add(str.Trim());
+                newContent2 += c;
             }
         }
-
-        Console.WriteLine("2)");
-        Console.WriteLine(String.Join("\n", oddNumbers2));
-        Console.WriteLine();
-
+        Console.WriteLine("2) " + String.Join("\n", newContent2));
 
         // 3)
-        string text3 = "-17, 2, 18, 4, -9, 7, 10, 18, 19, 8, 11, -3, 12, 15, 3, 18, -5, -4, 1, 19";
-        string[] strings3 = text3.Split(',');
-        List<string> oddNumbers3 = new List<string>();
-
-        foreach (string str in strings3)
-        {
-            if (int.TryParse(str.Trim(), out int number) && number % 4 == 0)
-            {
-                oddNumbers3.Add(str.Trim());
-            }
-        }
-
-        Console.WriteLine("3)");
-        Console.WriteLine(String.Join("\n", oddNumbers3));
-        Console.WriteLine();
-
+        string content3 = "s1ah2nds4njah34nd";
+        int count3 = content3.Count(c => c == 'h');
+        Console.WriteLine("3) " + count3);
 
         // 4)
-        string text4 = "24, 2, 18, 4, -9, 4, 10, 18, 19, 16";
-        string[] strings4 = text4.Split(',');
-        List<string> oddNumbers4 = new List<string>();
-
-        foreach (string str in strings4)
+        string content4 = "SDNsSA2KgDNJ5ShAJN3DNA6SJ";
+        string newContent4 = "";
+        foreach (char c in content4)
         {
-            if (int.TryParse(str.Trim(), out int number) && number % 3 == 0)
+            if (!char.IsUpper(c))
             {
-                oddNumbers4.Add(str.Trim());
+                newContent4 += c;
             }
         }
-
-        Console.WriteLine("4)");
-        Console.WriteLine(String.Join("\n", oddNumbers4));
-        Console.WriteLine();
-
+        Console.WriteLine("4) " + String.Join("\n", newContent4));
 
         // 5)
-        string text5 = "-10, 25, 17, -1, -5, 1, 5";
-        string[] strings5 = text5.Split(',');
-        List<string> oddNumbers5 = new List<string>();
-
-        foreach (string str in strings5)
+        string content5 = "09s87654g32123d45678a";
+        string newContent5 = "";
+        foreach (char c in content5)
         {
-            if (int.TryParse(str.Trim(), out int number) && number % 2 != 0)
+            if (!char.IsDigit(c))
             {
-                oddNumbers5.Add(str.Trim());
+                newContent5 += c;
             }
         }
-
-        Console.WriteLine("5)");
-        Console.WriteLine(String.Join("\n", oddNumbers5));
-        Console.WriteLine();
-
+        Console.WriteLine("5) " + String.Join("\n", newContent5));
 
         // 6)
-        string text6 = "-17, 2, 18, 4, -9, 7, 10, 18, 19, 8, 11, -3, 12, 15, 3, 18, -5, -4, 1, 19";
-        string[] strings6 = text6.Split(',');
-        List<string> oddNumbers6 = new List<string>();
-
-        foreach (string str in strings6)
-        {
-            if (int.TryParse(str.Trim(), out int number) && number % 6 == 0)
-            {
-                oddNumbers6.Add(str.Trim());
-            }
-        }
-
-        Console.WriteLine("6)");
-        Console.WriteLine(String.Join("\n", oddNumbers6));
-        Console.WriteLine();
-
+        string content6 = "sv1a6dbNJ5S2KDS53nda4nkd5s7S,D";
+        int count6 = content6.Count(c => c == '5');
+        Console.WriteLine("6) " + count6);
 
         // 7)
-        string text7 = "-1, -5, -7, 24, 8, 21, 4, 1, 5";
-        string[] strings7 = text7.Split(',');
-        List<string> oddNumbers7 = new List<string>();
-
-        foreach (string str in strings7)
+        string content7 = "KsjDsSsadsaFs";
+        string newContent7 = "";
+        foreach (char c in content7)
         {
-            if (int.TryParse(str.Trim(), out int number) && number % 2 == 0)
+            if (char.IsUpper(c))
             {
-                oddNumbers7.Add(str.Trim());
+                newContent7 += c;
             }
         }
-
-        Console.WriteLine("7)");
-        Console.WriteLine(String.Join("\n", oddNumbers7));
-        Console.WriteLine();
-
+        Console.WriteLine("7) " + String.Join("\n", newContent7));
 
         // 8)
-        string text8 = "14, 0, 23, 0, -10, 25, 17, 17, 15, 6, 24, -1, -5, -7, 24, 8, 21, 4, 1, 5";
-        string[] strings8 = text8.Split(',');
-        List<string> oddNumbers8 = new List<string>();
-
-        foreach (string str in strings8)
+        string content8 = "DSADlJHSADGtASUIyDSrkAN";
+        string newContent8 = "";
+        foreach (char c in content8)
         {
-            if (int.TryParse(str.Trim(), out int number) && number % 3 == 0)
+            if (!char.IsUpper(c))
             {
-                oddNumbers8.Add(str.Trim());
+                newContent8 += c;
             }
         }
-
-        Console.WriteLine("8)");
-        Console.WriteLine(String.Join("\n", oddNumbers8));
-        Console.WriteLine();
-
+        Console.WriteLine("8) " + String.Join("\n", newContent8));
 
         // 9)
-        string text9 = "16, -10, -6, -3, 15, 7, 8, -5, -4, 16, -19";
-        string[] strings9 = text9.Split(',');
-        List<string> oddNumbers9 = new List<string>();
-
-        foreach (string str in strings9)
+        string content9 = "sdj433sakdjsa234sa3dns5ja";
+        string newContent9 = "";
+        foreach (char c in content9)
         {
-            if (int.TryParse(str.Trim(), out int number) && number % 2 == 0)
+            if (char.IsDigit(c))
             {
-                oddNumbers9.Add(str.Trim());
+                newContent9 += c;
             }
         }
-
-        Console.WriteLine("9)");
-        Console.WriteLine(String.Join("\n", oddNumbers9));
-        Console.WriteLine();
-
+        Console.WriteLine("9) " + String.Join("\n", newContent9));
 
         // 10)
-        string text10 = "14, 23, -10, 25, 17, 17, 15, 6, 24, -1, -5, -7, 24, 8, 21, 4, 1, 5";
-        string[] strings10 = text10.Split(',');
-        List<string> oddNumbers10 = new List<string>();
-
-        foreach (string str in strings10)
+        string content10 = "r3j4658w31d1";
+        string newContent10 = "";
+        foreach (char c in content10)
         {
-            if (int.TryParse(str.Trim(), out int number) && number % 5 == 0)
+            if (!char.IsDigit(c))
             {
-                oddNumbers10.Add(str.Trim());
+                newContent10 += c;
             }
         }
-
-        Console.WriteLine("10)");
-        Console.WriteLine(String.Join("\n", oddNumbers10));
-        Console.WriteLine();
+        Console.WriteLine("10) " + String.Join("\n", newContent10));
     }
 }
