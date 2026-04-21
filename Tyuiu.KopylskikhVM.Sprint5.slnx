@@ -14,6 +14,11 @@
     <Project Path="Tyuiu.KopylskikhVM.Sprint5.Task2.V22.Test/Tyuiu.KopylskikhVM.Sprint5.Task2.V22.Test.csproj" Id="990ff1aa-15af-4104-9038-bdd66f08b96a" />
     <Project Path="Tyuiu.KopylskikhVM.Sprint5.Task2.V22/Tyuiu.KopylskikhVM.Sprint5.Task2.V22.csproj" Id="b0294b33-ace7-43e5-af5f-75c0a6f0885b" />
   </Folder>
+  <Folder Name="/Task4/">
+    <Project Path="Tyuiu.KopylskikhVM.Sprint5.Task4.V22.Lib/Tyuiu.KopylskikhVM.Sprint5.Task4.V22.Lib.csproj" Id="96a92e1b-129b-435c-b4ba-f9c291614dd9" />
+    <Project Path="Tyuiu.KopylskikhVM.Sprint5.Task4.V22.Test/Tyuiu.KopylskikhVM.Sprint5.Task4.V22.Test.csproj" Id="fa7458a5-a187-41ff-9dbc-c3b9a05a6dfe" />
+    <Project Path="Tyuiu.KopylskikhVM.Sprint5.Task4.V22/Tyuiu.KopylskikhVM.Sprint5.Task4.V22.csproj" Id="2447edee-796a-4517-bf00-e60d31d149fe" />
+  </Folder>
   <Folder Name="/Tesk3/">
     <Project Path="Tyuiu.KopylskikhVM.Sprint5.Task3.V16.Lib/Tyuiu.KopylskikhVM.Sprint5.Task3.V16.Lib.csproj" Id="fb0bbc6c-7f33-48b4-bd5f-d0504eeada28" />
     <Project Path="Tyuiu.KopylskikhVM.Sprint5.Task3.V16.Test/Tyuiu.KopylskikhVM.Sprint5.Task3.V16.Test.csproj" Id="9d7cc75b-1beb-4058-a379-1142cebc51ce" />
